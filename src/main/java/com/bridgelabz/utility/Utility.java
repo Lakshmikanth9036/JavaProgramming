@@ -457,15 +457,15 @@ public class Utility {
 		return binarySearch(s, ele, l, h);
 	}
 	
-	public static <E> int binarySearchGeneric(E[] s, E ele, int l, int h){
+	public static <E extends Comparable<E>> int binarySearchGeneric(E[] s, E ele, int l, int h){
 		int mid = (l+h)/2;
 		if(l>h)
 			return -1;
 		if(s[mid].equals(ele))
 			return mid;
-		if((s[mid].toString()).compareTo(ele.toString())<0)
+		if(s[mid].compareTo(ele)<0)
 			l = mid+1;
-		if((s[mid].toString()).compareTo(ele.toString())>0)
+		if(s[mid].compareTo(ele)>0)
 			h = mid-1;
 		return binarySearchGeneric(s, ele, l, h);
 	}
