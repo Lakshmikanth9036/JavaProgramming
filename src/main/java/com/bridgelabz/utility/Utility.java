@@ -6,7 +6,7 @@ import java.io.IOException;
 
 import com.bridgelabz.InputUtility.InputUtility;
 
-public class Utility implements Comparable<Utility>{
+public class Utility {
 	
 	/**
 	 * Displays Integer type array values
@@ -470,18 +470,6 @@ public class Utility implements Comparable<Utility>{
 		return binarySearchGeneric(s, ele, l, h);
 	}
 	
-	public static <E> void bubbleSortGeneric(E[] a){
-		for (int i = 0; i < a.length-1; i++) {
-			for (int j = 0; j < a.length-i-1; j++) {
-				if((a[j].toString()).compareTo(a[j+1].toString())>0){
-					E temp = a[j];
-					a[j] = a[j+1];
-					a[j+1] = temp;
-				}
-			}
-		}
-	}
-	
 	public static void bubbleSort(int[] a){
 		for (int i = 0; i < a.length-1; i++) {
 			for (int j = 0; j < a.length-i-1; j++) {
@@ -494,17 +482,17 @@ public class Utility implements Comparable<Utility>{
 		}
 	}
 	
-	public static <E> void bubbleSortGenric(E[] a){
+	public static <E extends Comparable<E>> void bubbleSortGeneric(E[] a){
 		
-		for (int i = 0; i < a.length-1; i++) {
-			for (int j = 0; j < a.length-i-1; j++) {
-				if((a[j]).compareTo(a[j+1])>0){
-					E temp = a[j];
-					a[j] = a[j+1];
-					a[j+1] = temp;
+			for (int i = 0; i < a.length-1; i++) {
+				for (int j = 0; j < a.length-i-1; j++) {
+					if(a[j].compareTo(a[j+1])>0){
+						E temp = a[j];
+						a[j] = a[j+1];
+						a[j+1] = temp;
+					}
 				}
 			}
-		}
 	}
 	
 	public static void merge(String[] s, int l, int h, int m){
@@ -604,12 +592,6 @@ public class Utility implements Comparable<Utility>{
 			h--;
 		}
 		return true;
-	}
-
-	@Override
-	public int compareTo(Utility o) {
-		// TODO Auto-generated method stub
-		return 0;
 	}
 	
 }
