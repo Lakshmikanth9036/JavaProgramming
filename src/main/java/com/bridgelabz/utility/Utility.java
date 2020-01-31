@@ -444,6 +444,18 @@ public class Utility {
 		}
 	}
 	
+	public static <E extends Comparable<E>> void insertionSort(E[] s){
+		for (int i = 1; i < s.length; i++) {
+			int j = i-1;
+			E temp = s[i];
+			while(j>=0 && temp.compareTo(s[j])<0){
+				s[j+1] = s[j];
+				j--;
+			}
+			s[++j] = temp;
+		}
+	}
+	
 	public static int binarySearch(String[] s, String ele, int l, int h){
 		int mid = (l+h)/2;
 		if(l>h)
