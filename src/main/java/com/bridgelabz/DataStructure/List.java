@@ -27,11 +27,17 @@ public class List<T> {
 	public void remove(T item){
 		Node current = head;
 		Node previous = null;
-		while(!current.data.equals(item)){
-			previous = current;
-			current = current.next;
+		
+		if(head.data.equals(item)){
+			head = head.next;
 		}
-		previous.next =current.next;
+		else{
+			while(!current.data.equals(item)){
+				previous = current;
+				current = current.next;
+			}
+			previous.next =current.next;
+		}
 	}
 	
 	public boolean search(T item){
@@ -110,6 +116,16 @@ public class List<T> {
 		if(head == null)
 			return true;
 		return false;
+	}
+	
+	public int size(){
+		Node n = head;
+		int size = 0;
+		while(n != null){
+			n = n.next;
+			size++;
+		}
+		return size;
 	}
 	
 	public String toString(){

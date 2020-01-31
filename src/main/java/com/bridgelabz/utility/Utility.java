@@ -1,7 +1,9 @@
 package com.bridgelabz.utility;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 
 import com.bridgelabz.InputUtility.InputUtility;
@@ -429,6 +431,29 @@ public class Utility {
 			}
 		}
 		return words;
+	}
+	
+	public static void writeToFile(String s, String[] str){
+		BufferedWriter writer = null;
+		try{
+			writer = new BufferedWriter(new FileWriter(s));
+			for (int i = 0; i < str.length; i++) {
+				writer.write(str[i]);
+				if(i!=str.length-1)
+					writer.write(",");
+			}
+		}
+		catch(IOException e){
+			e.printStackTrace();
+		}
+		finally{
+			try {
+				writer.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 	}
 	
 	public static void insertionSort(String[] s){
