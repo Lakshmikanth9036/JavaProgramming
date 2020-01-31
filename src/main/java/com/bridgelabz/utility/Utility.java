@@ -6,7 +6,7 @@ import java.io.IOException;
 
 import com.bridgelabz.InputUtility.InputUtility;
 
-public class Utility {
+public class Utility implements Comparable<Utility>{
 	
 	/**
 	 * Displays Integer type array values
@@ -495,9 +495,10 @@ public class Utility {
 	}
 	
 	public static <E> void bubbleSortGenric(E[] a){
+		
 		for (int i = 0; i < a.length-1; i++) {
 			for (int j = 0; j < a.length-i-1; j++) {
-				if((a[j].toString()).compareTo(a[j+1].toString())>0){
+				if((a[j]).compareTo(a[j+1])>0){
 					E temp = a[j];
 					a[j] = a[j+1];
 					a[j+1] = temp;
@@ -603,6 +604,12 @@ public class Utility {
 			h--;
 		}
 		return true;
+	}
+
+	@Override
+	public int compareTo(Utility o) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	
 }
