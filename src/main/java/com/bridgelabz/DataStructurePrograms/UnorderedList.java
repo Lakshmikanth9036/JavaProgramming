@@ -1,6 +1,6 @@
 package com.bridgelabz.DataStructurePrograms;
 
-import com.bridgelabz.DataStructure.List;
+import com.bridgelabz.DataStructure.LinkedList;
 import com.bridgelabz.InputUtility.InputUtility;
 import com.bridgelabz.utility.Utility;
 
@@ -8,7 +8,7 @@ public class UnorderedList {
 
 	public static void main(String[] args) {
 		String[] s = Utility.splitListOfWords("F:\\file.txt");
-		List<String> list = new List<>();
+		LinkedList<String> list = new LinkedList<>();
  		for(int i = 0 ; i<s.length ; i++){
 			list.add(s[i]);
 		}
