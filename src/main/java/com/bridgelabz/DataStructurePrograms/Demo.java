@@ -16,6 +16,8 @@ public class Demo {
 		System.out.println(queue);
 		System.out.println(queue.dequeue());
 		System.out.println(queue);
+		System.out.println(queue.dequeue());
+		System.out.println(queue.isEmpty());
 	}
 
 }
