@@ -1,0 +1,73 @@
+package com.bridgelabz.DataStructure;
+
+public class Stack<T>{
+	
+	public class Node{
+		T data;
+		Node next;
+		public Node(T data){
+			this.data = data;
+		}
+	}
+	
+	Node top;
+
+	public void push(T item){
+		Node node = new Node(item);
+		if(top == null){
+			top = node;
+		}
+		else{
+			node.next = top;
+			top = node;
+		}
+	}
+	
+	public T pop(){
+		if(top == null){
+			throw new IndexOutOfBoundsException("Stack Underflow");
+		}
+		
+		Node n = top;
+		T item = top.data;
+		top = top.next;
+		return item;
+	}
+	
+	public T peek(){
+		if(top == null){
+			throw new IndexOutOfBoundsException("Stack Empty");
+		}
+		Node n = top;
+		T item = top.data;
+		return item;
+	}
+	
+	public boolean isEmpty(){
+		if(top == null)
+			return true;
+		return false;
+	}
+	
+	public int size(){
+		Node n = top;
+		int i = 0;
+		while(n!=null){
+			i++;
+			n = n.next;
+		}
+		return i;
+	}
+	
+	public String toString() {
+		String s = "[";
+		Node n = top;
+		while (n != null) {
+			s = s + n.data;
+			if (n.next != null)
+				s = s + " ";
+			n = n.next;
+		}
+		return s + "]";
+	}
+}

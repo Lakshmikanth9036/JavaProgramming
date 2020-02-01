@@ -142,10 +142,6 @@ public class LinkedList<T extends Comparable<T>> {
 		}
 	}
 
-	public static <T extends Comparable<T>> int compare(T data, T data2) {
-		return data.compareTo(data2);
-	}
-
 	public String toString() {
 		String s = "[";
 		Node n = head;
