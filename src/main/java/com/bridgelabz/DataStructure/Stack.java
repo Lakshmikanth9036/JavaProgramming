@@ -28,7 +28,6 @@ public class Stack<T>{
 			throw new IndexOutOfBoundsException("Stack Underflow");
 		}
 		
-		Node n = top;
 		T item = top.data;
 		top = top.next;
 		return item;
@@ -38,7 +37,6 @@ public class Stack<T>{
 		if(top == null){
 			throw new IndexOutOfBoundsException("Stack Empty");
 		}
-		Node n = top;
 		T item = top.data;
 		return item;
 	}

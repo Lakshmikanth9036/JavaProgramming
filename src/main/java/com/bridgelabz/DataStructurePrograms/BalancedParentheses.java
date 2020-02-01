@@ -4,31 +4,34 @@ import com.bridgelabz.DataStructure.Stack;
 import com.bridgelabz.InputUtility.InputUtility;
 
 public class BalancedParentheses {
-
-	public static void main(String[] args) {
+	
+	public static boolean isBalanced(String s){
 		Stack<Character> stack = new Stack<>();
-		System.out.println("Enter the expression");
-		String s = InputUtility.getScanner().next();
-		int k = 0;
-		
-		while(k<s.length()){
-			char ch = s.charAt(k);
+		for(int i = 0 ;i <s.length() ; i++){
+			char ch = s.charAt(i);
 			if(ch == '('){
 				stack.push(ch);
 			}
-			else if(ch == ')'){
-				if(!stack.isEmpty())
-					stack.pop();
-				if(stack.isEmpty()){
-					break;
+			else{
+				if(stack.isEmpty() && ch == ')'){
+					return false;
 				}
+				else if(ch == ')')
+					stack.pop();
 			}
-			k++;
 		}
-		if(stack.isEmpty() && k == s.length()-1)
-			System.out.println("Given expression is valid expression");
+		return stack.isEmpty();
+	}
+
+	public static void main(String[] args) {
+		
+		System.out.println("Enter the expression");
+		String s = InputUtility.getScanner().next();
+		boolean res = isBalanced(s);
+		if(res)
+			System.out.println("Balanced");
 		else
-			System.out.println("Given expression is not a valid expression");
+			System.out.println("Not balanced");
 	}
 
 }
