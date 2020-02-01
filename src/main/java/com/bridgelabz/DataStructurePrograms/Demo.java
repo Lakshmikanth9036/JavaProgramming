@@ -1,27 +1,21 @@
 package com.bridgelabz.DataStructurePrograms;
 
-import com.bridgelabz.DataStructure.Stack;
+import com.bridgelabz.DataStructure.Queue;
 
 public class Demo {
-
 	public static void main(String[] args) {
-		Stack<Character> stack = new Stack<>();
-		stack.push('A');
-		stack.push('B');
-		stack.push('C');
-		stack.push('D');
-		System.out.println(stack);
-		System.out.println(stack.pop());
-		System.out.println(stack);
-		System.out.println(stack.peek());
-		System.out.println(stack.peek());
-		System.out.println(stack);
-		System.out.println(stack.size());
-		System.out.println(stack.pop());
-		System.out.println(stack.pop());
-		System.out.println(stack.isEmpty());
-		System.out.println(stack.pop());
-		System.out.println(stack.isEmpty());
+		Queue<Integer> queue = new Queue<>();
+		queue.enqueue(10);
+		queue.enqueue(20);
+		queue.enqueue(30);
+		queue.enqueue(40);
+		System.out.println(queue);
+		System.out.println(queue.dequeue());
+		System.out.println(queue);
+		System.out.println(queue.dequeue());
+		System.out.println(queue);
+		System.out.println(queue.dequeue());
+		System.out.println(queue);
 	}
 
 }
