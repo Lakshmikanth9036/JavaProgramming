@@ -44,6 +44,16 @@ public class Queue<T> {
 		return false;
 	}
 	
+	public int size(){
+		int i = 0;
+		Node n = front;
+		while(n != null){
+			i++;
+			n = n.next;
+		}
+		return i;
+	}
+	
 	public String toString(){
 		String s = "[";
 		Node n = front;

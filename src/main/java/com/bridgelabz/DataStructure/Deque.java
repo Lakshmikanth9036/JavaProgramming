@@ -69,6 +69,22 @@ public class Deque<T> {
 		return data;
 	}
 	
+	public int size(){
+		int i = 0;
+		Node n = front;
+		while(n != null){
+			i++;
+			n = n.next;
+		}
+		return i;
+	}
+	
+	public boolean isEmpty(){
+		if(front == null && rear == null)
+			return true;
+		return false;
+	}
+	
 	public String toString(){
 		String s = "[";
 		Node n = front;

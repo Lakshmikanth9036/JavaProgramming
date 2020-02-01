@@ -21,7 +21,7 @@ public class Demo {
 		System.out.println(deque.removeFront());
 		System.out.println(deque.removeFront());
 		System.out.println(deque.removeFront());
-		
+		System.out.println(deque.isEmpty());
 		
 		
 	}
