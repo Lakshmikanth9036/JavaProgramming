@@ -1,23 +1,29 @@
 package com.bridgelabz.DataStructurePrograms;
 
-import com.bridgelabz.DataStructure.Queue;
+import com.bridgelabz.DataStructure.Deque;
 
 public class Demo {
 	public static void main(String[] args) {
-		Queue<Integer> queue = new Queue<>();
-		queue.enqueue(10);
-		queue.enqueue(20);
-		queue.enqueue(30);
-		queue.enqueue(40);
-		System.out.println(queue);
-		System.out.println(queue.dequeue());
-		System.out.println(queue);
-		System.out.println(queue.dequeue());
-		System.out.println(queue);
-		System.out.println(queue.dequeue());
-		System.out.println(queue);
-		System.out.println(queue.dequeue());
-		System.out.println(queue.isEmpty());
+		Deque<Integer> deque = new Deque<>();
+		deque.addRear(40);
+		deque.addRear(50);
+		deque.addRear(60);
+		System.out.println(deque);
+		deque.addFront(30);
+		deque.addFront(20);
+		deque.addFront(10);
+		System.out.println(deque);
+		System.out.println(deque.removeRear());
+		System.out.println(deque);
+		System.out.println(deque.removeFront());
+		System.out.println(deque);
+		System.out.println(deque.removeFront());
+		System.out.println(deque.removeFront());
+		System.out.println(deque.removeFront());
+		System.out.println(deque.removeFront());
+		
+		
+		
 	}
 
 }
