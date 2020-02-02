@@ -8,6 +8,11 @@ import java.io.IOException;
 
 import com.bridgelabz.InputUtility.InputUtility;
 
+/**
+ * @author Lakshmikanth N
+ * @since 28/01/2020
+ */
+
 public class Utility {
 	
 	/**
@@ -224,7 +229,12 @@ public class Utility {
 		return w;
 	}
 	
-
+	/**
+	 * Simple gambling game which returns number of  wins and percent of wins and losses
+	 * @param stake is the total amount that user has with him before he start the game
+	 * @param goal is the target amount which user tend to reach in the gambling simulation
+	 * @param n is the maximum number of games that the user can play by which user has to reach the goal
+	 */
 	public static void gambler(int stake, int goal, int n){
 		int win = 0, loss = 0;
 		while(n>0 && stake != goal){
@@ -259,6 +269,10 @@ public class Utility {
 		System.out.println("Elapsed time: "+elapsed);
 	}
 
+	/**
+	 * Receives a array and returns the number of distinct triplets and corresponding triplet
+	 * @param a is user provided input array
+	 */
 	public static void distinctTriplet(int[] a){
 		int  d = 0;
 		for (int i = 0; i < a.length-2; i++) {
@@ -272,6 +286,11 @@ public class Utility {
 		System.out.println("Number of distinct triplets are: "+d);
 	}
 	
+	/**
+	 * Receives an array and return the array that contains only unique element  
+	 * @param a is the array value received by user
+	 * @return an unique array element
+	 */
 	public static int[] distinct(int[] a){
 		int[] unique = InputUtility.getInt(a.length);
 		
@@ -294,6 +313,10 @@ public class Utility {
 		return u;
 	}
 	
+	/**
+	 * Display only unique coupon generate by {@code n} iteration 
+	 * @param n is the number of coupons that need to be generated
+	 */
 	public static void distinctCoupon(int n){
 		int[] a = InputUtility.getInt(n);
 		for(int i = 0; i<n ; i++){
@@ -350,6 +373,14 @@ public class Utility {
 		return fahre;
 	}
 	
+	
+	/**
+	 * Calculates the monthly payments that user has to pay every month by principle loan amount, years to pay principle loan amount and rate of interest
+	 * @param P is the principle loan amount
+	 * @param Y is the years to pay principle loan amount
+	 * @param R is the rate of interest
+	 * @return the monthly payments that user has to pay
+	 */
 	public static double mounthlyPayment(double P, int Y, double R){
 		if(P<1 || Y<1 || R<1)
 			return -1;
@@ -359,6 +390,11 @@ public class Utility {
 		return payment;
 	}
 	
+	/**
+	 * Fewest Notes to be returned for Vending Machine 
+	 * @param n is the Change in rs to be returned by the Vending Machine 
+	 * @return number of minimum Note needed to give the change
+	 */
 	public static int minNotes(int n){
 		if(n<1)
 			return -1;
@@ -373,6 +409,11 @@ public class Utility {
 		return minNotes;
 	}
 	
+	/**
+	 * List of Rs Notes that would given in the Change by Vending Machine
+	 * @param n is the Change in rs to be returned by the Vending Machine
+	 * @return list of Rs Notes
+	 */
 	public static int[] change(int n){
 		int[] notes = {1000,500,100,50,10,5,2,1};
 		int[] count = InputUtility.getInt(notes.length);
@@ -385,7 +426,11 @@ public class Utility {
 		return count;
 	}
 	
-	
+	/**
+	 * Returns the binary equivalent of the given decimal number 
+	 * @param n is the decimal number for which the binary equivalent is required
+	 * @return the binary equivalent of {@code n}
+	 */
 	public static String toBinary(int n){
 		String bin="";
 		while(n>0){
@@ -396,6 +441,11 @@ public class Utility {
 		return bin;
 	}
 	
+	/**
+	 * Returns the decimal value of the given binary number
+	 * @param n is the binary number for which the decimal value is required
+	 * @return the decimal value of {@code n}
+	 */
 	public static int toDecimal(int n){
 		int dec = 0, i = 0;
 		while(n>0){
@@ -407,6 +457,11 @@ public class Utility {
 		return dec;
 	}
 	
+	/**
+	 * Read in the list of words comma separated from a File
+	 * @param s is the file from which we read the words
+	 * @return an array of string containing list of words that had been read from the file
+	 */
 	public static String[] splitListOfWords(String s){
 		BufferedReader reader = null;
 		String[] words = null;
@@ -433,6 +488,11 @@ public class Utility {
 		return words;
 	}
 	
+	/**
+	 * Write the content of the string array to a file
+	 * @param s is the file in which we want to store the given string array
+	 * @param str is the string array that we need to sore in {@code s} file
+	 */
 	public static void writeToFile(String s, String[] str){
 		BufferedWriter writer = null;
 		try{
@@ -450,12 +510,15 @@ public class Utility {
 			try {
 				writer.close();
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
 	}
 	
+	/**
+	 * Using insertion sort mechanism sorts the given string array in lexograpical order
+	 * @param s is the string array that need to be sorted
+	 */
 	public static void insertionSort(String[] s){
 		for (int i = 1; i < s.length; i++) {
 			int j = i-1;
@@ -468,10 +531,14 @@ public class Utility {
 		}
 	}
 	
-	public static <E extends Comparable<E>> void insertionSort(E[] s){
+	/**
+	 * Generic method which sort any type of array in its natural order using insertion sort mechanism
+	 * @param s is the generic type array that need to be sorted
+	 */
+	public static <T extends Comparable<T>> void insertionSort(T[] s){
 		for (int i = 1; i < s.length; i++) {
 			int j = i-1;
-			E temp = s[i];
+			T temp = s[i];
 			while(j>=0 && temp.compareTo(s[j])<0){
 				s[j+1] = s[j];
 				j--;
@@ -480,6 +547,14 @@ public class Utility {
 		}
 	}
 	
+	/**
+	 * Search a given element using binary search technique
+	 * @param s is the array form which we need to search the element
+	 * @param ele is the element to be searched
+	 * @param l is the starting index of the array
+	 * @param h is the last index of the array
+	 * @return mid value if the element is found else return -1
+	 */
 	public static int binarySearch(String[] s, String ele, int l, int h){
 		int mid = (l+h)/2;
 		if(l>h)
@@ -493,6 +568,14 @@ public class Utility {
 		return binarySearch(s, ele, l, h);
 	}
 	
+	/**
+	 * Search a given element using binary search technique for any generic type array
+	 * @param s is the array form which we need to search the element
+	 * @param ele is the element to be searched
+	 * @param l is the starting index of the array
+	 * @param h is the last index of the array
+	 * @return mid value if the element is found else return -1
+	 */
 	public static <E extends Comparable<E>> int binarySearchGeneric(E[] s, E ele, int l, int h){
 		int mid = (l+h)/2;
 		if(l>h)
@@ -506,6 +589,10 @@ public class Utility {
 		return binarySearchGeneric(s, ele, l, h);
 	}
 	
+	/**
+	 * Using Bubble sort mechanism sorts the given integer array
+	 * @param s is the integer array that need to be sorted
+	 */
 	public static void bubbleSort(int[] a){
 		for (int i = 0; i < a.length-1; i++) {
 			for (int j = 0; j < a.length-i-1; j++) {
@@ -518,6 +605,10 @@ public class Utility {
 		}
 	}
 	
+	/**
+	 * Using Bubble sort mechanism sorts the given integer array
+	 * @param s is the integer array that need to be sorted
+	 */
 	public static <E extends Comparable<E>> void bubbleSortGeneric(E[] a){
 		
 			for (int i = 0; i < a.length-1; i++) {
@@ -531,6 +622,13 @@ public class Utility {
 			}
 	}
 	
+	/**
+	 * Merge the given array 
+	 * @param s is the array
+	 * @param l is the least index
+	 * @param h is the highest index
+	 * @param m is the mid value
+	 */
 	public static void merge(String[] s, int l, int h, int m){
 		String[] str = InputUtility.getString(h-l+1);
 		int i = l , j = m+1, k = 0;
@@ -549,6 +647,12 @@ public class Utility {
 		}
 	}
 	
+	/**
+	 * Sort the array using merge sort technique 
+	 * @param s is the array to be sorted
+	 * @param l is the least index 
+	 * @param h is the highest index
+	 */
 	public static void mergeSort(String[] s, int l , int h){
 		if(l<h){
 			int m = (l+h)/2;
@@ -558,6 +662,11 @@ public class Utility {
 		}
 	}
 	
+	/**
+	 * Return an array that contain the frequency of the letters in the given string
+	 * @param s is the string
+	 * @return the frequency of character in the string
+	 */
 	public static int[] frequency(String s){
 		int[] frequency = InputUtility.getInt(26);
 		for(int i = 0 ; i < s.length(); i++){
@@ -572,6 +681,12 @@ public class Utility {
 		return frequency;
 	}
 	
+	/**
+	 * Returns if the given two strings are anagram or not
+	 * @param s1 is the string given by user
+	 * @param s2 is the string the need to be compared with other string
+	 * @return true if both the string are anagram else return flase
+	 */
 	public static boolean isAnagram(String s1, String s2){
 		int[] sc1 = frequency(s1);
 		int[] sc2 = frequency(s2);
@@ -607,6 +722,11 @@ public class Utility {
 		}
 	}
 	
+	/**
+	 * Returns true if the given number is prime number
+	 * @param n is the number to be checked 
+	 * @return true if the number is prime number else returns false
+	 */
 	public static boolean isPrime(int n){
 		if(n<2)
 			return false;
@@ -617,6 +737,11 @@ public class Utility {
 		return true;
 	}
 	
+	/**
+	 * Returns true if the given string is palindrome
+	 * @param s is the string to be checked 
+	 * @return true if the string is palindrome else returns false
+	 */
 	public static boolean isPalin(String s){
 		if(s.length()<2)
 			return false;
