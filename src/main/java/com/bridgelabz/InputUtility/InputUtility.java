@@ -60,6 +60,11 @@ public class InputUtility {
 		return arr;
 	}
 	
+	public static Object[][] getObject2D(int m, int n){
+		Object[][] objArr = new Object[m][n];
+		return objArr;
+	}
+	
 	public static Integer[][] getInteger2DArr(int m,int n){
 		Integer[][] a = new Integer[m][n];
 		for(int i = 0 ; i < a.length ; i++){

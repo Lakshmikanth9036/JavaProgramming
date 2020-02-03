@@ -90,7 +90,7 @@ public class Utility {
 	 * @param n year that we want to check is it a leap year or not
 	 * @return true if {@code n} is a leap year or else it will return false
 	 */
-	public static boolean leapYear(int n){
+	public static boolean isLeapYear(int n){
 		if(n<1000 || n>9999)
 			return false;
 		if(n%400 == 0 || n%4 == 0 && n%100 != 0)
@@ -341,9 +341,9 @@ public class Utility {
 		int d0 = -1;
 		
 		if(m>0 && m<=12 && y>999 && y<=9999 && d>0){
-			if(leapYear(y) && m==2 && d<=29)
+			if(isLeapYear(y) && m==2 && d<=29)
 				d0 = (d+x+31*mo/12)%7;
-			else if(!leapYear(y) && m==2 && d<=28)
+			else if(!isLeapYear(y) && m==2 && d<=28)
 				d0 = (d+x+31*mo/12)%7;
 			else if ((m==4 || m==6 || m==9 || m==11)&& m!=2 && d<=30)
 				d0 = (d+x+31*mo/12)%7;
@@ -755,4 +755,18 @@ public class Utility {
 		return true;
 	}
 	
+	/**
+	 * Returns the day of the week i.e; if Sunday 0, Monday 1, and soon
+	 * @param m is the month
+	 * @param d is the day 
+	 * @param y is the year
+	 * @return the day of the week
+	 */
+	public static int getDay(int m, int d, int y){
+		int yo = y-(14-m)/12;
+		int x = yo+yo/4-yo/100+yo/400;
+		int mo = m+12*((14-m)/12)-2;
+		int d0 = (d+x+31*mo/12)%7;
+		return d0;
+		}
 }

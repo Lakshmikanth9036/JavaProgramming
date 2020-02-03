@@ -31,7 +31,7 @@ public class LeapYearTest {
 	
 	@Test
 	public void	leapYearTest() {
-		assertEquals(expected,Utility.leapYear(input));
+		assertEquals(expected,Utility.isLeapYear(input));
 	}
 
 }
