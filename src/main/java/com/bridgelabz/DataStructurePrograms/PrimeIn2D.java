@@ -9,7 +9,7 @@ public class PrimeIn2D {
 		Object[][] obj = InputUtility.getObject2D(10, 100);
 		Object[][] anag = InputUtility.getObject2D(10, 100);
 		
-		int prime = 2, m = 0, n = 0;
+		int prime = 2, p = 0, q = 0;
 		
 		for(int i = 0; i < obj.length; i++){
 			for (int j = 0; j < obj[i].length; j++) {
@@ -28,12 +28,12 @@ public class PrimeIn2D {
 						
 					}
 					else if(Utility.isAnagram(s1, s2)){
-						anag[m][n++] = s1;
-						anag[m][n++] = s2;
+						anag[p][q++] = s1;
+						anag[p][q++] = s2;
 					}	
 				}
 			}
-			m++;
+			p++;
 		}
 		
 		for(int i = 0; i < anag.length; i++){
