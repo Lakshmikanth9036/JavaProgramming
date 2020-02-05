@@ -6,6 +6,9 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
 import com.bridgelabz.InputUtility.InputUtility;
 
 /**
@@ -14,6 +17,9 @@ import com.bridgelabz.InputUtility.InputUtility;
  */
 
 public class Utility {
+	
+	static Logger logger = Logger.getLogger(Utility.class);
+
 	
 	/**
 	 * Displays Integer type array values
@@ -91,8 +97,12 @@ public class Utility {
 	 * @return true if {@code n} is a leap year or else it will return false
 	 */
 	public static boolean isLeapYear(int n){
-		if(n<1000 || n>9999)
+		PropertyConfigurator.configure("log4j.properties");
+		//System.setProperty("fname", "F:\\Programs\\BridgeLabz\\JavaProgramming\\src\\main\\java\\com\\bridgelabz\\log\\LeapYearLog.log");
+		if(n<1000 || n>9999){
+			logger.error("Error");
 			return false;
+		}
 		if(n%400 == 0 || n%4 == 0 && n%100 != 0)
 			return true;
 		return false;

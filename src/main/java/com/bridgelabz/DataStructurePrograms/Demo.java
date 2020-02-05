@@ -1,29 +1,16 @@
 package com.bridgelabz.DataStructurePrograms;
 
-import com.bridgelabz.DataStructure.Deque;
+import com.bridgelabz.DataStructure.LinkedList;
 
 public class Demo {
 	public static void main(String[] args) {
-		Deque<Integer> deque = new Deque<>();
-		deque.addRear(40);
-		deque.addRear(50);
-		deque.addRear(60);
-		System.out.println(deque);
-		deque.addFront(30);
-		deque.addFront(20);
-		deque.addFront(10);
-		System.out.println(deque);
-		System.out.println(deque.removeRear());
-		System.out.println(deque);
-		System.out.println(deque.removeFront());
-		System.out.println(deque);
-		System.out.println(deque.removeFront());
-		System.out.println(deque.removeFront());
-		System.out.println(deque.removeFront());
-		System.out.println(deque.removeFront());
-		System.out.println(deque.isEmpty());
-		
-		
+		LinkedList<String> list =  new LinkedList<>();
+		list.add("abhi");
+		list.add("revanth");
+		list.add("ankush");
+		System.out.println(list);
+		list.orderList();
+		System.out.println(list);
 	}
 
 }
