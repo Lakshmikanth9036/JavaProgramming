@@ -266,19 +266,33 @@ public class Utility {
 	 */
 	public static void gambler(int stake, int goal, int n){
 		int win = 0, loss = 0;
+		
+		logger.info("Entered gambler function");
+		
+		if(stake < 0 || goal < 0){
+			logger.error("Entered value should be positive");
+			return;
+		}
+		
 		while(n>0 && stake != goal){
+			logger.info("Entered while loop when stake::"+stake+" goal::"+goal+" n::"+n);
 			if(Math.random()>0.5){
 				stake += 1;
 				win++;
+				logger.info("Entered win condition now stake::"+stake+" win::"+win);
 			}
 			else{
 				stake -= 1;
 				loss++;
+				logger.info("Entered loss condition now stake::"+stake+" loss::"+loss);
 			}
 			n--;
 		}
+		logger.info("After the game number of win::"+win+" loss::"+loss);
 		double winPer = (win*100.0)/(win+loss);
+		logger.info("Win percentage winPer::"+winPer);
 		double lossPer = (loss*100.0)/(win+loss);
+		logger.info("Loss percentage lossPer::"+lossPer);
 		System.out.println("Number of wins: "+win);
 		System.out.println("Win percentage: "+winPer);
 		System.out.println("Loss percentage: "+lossPer);

@@ -1,0 +1,101 @@
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered gambler function
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::210 goal::250 n::50
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::211 win::1
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::211 goal::250 n::49
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered loss condition now stake::210 loss::1
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::210 goal::250 n::48
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::211 win::2
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::211 goal::250 n::47
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::212 win::3
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::212 goal::250 n::46
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered loss condition now stake::211 loss::2
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::211 goal::250 n::45
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered loss condition now stake::210 loss::3
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::210 goal::250 n::44
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::211 win::4
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::211 goal::250 n::43
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::212 win::5
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::212 goal::250 n::42
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered loss condition now stake::211 loss::4
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::211 goal::250 n::41
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered loss condition now stake::210 loss::5
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::210 goal::250 n::40
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::211 win::6
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::211 goal::250 n::39
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered loss condition now stake::210 loss::6
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::210 goal::250 n::38
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered loss condition now stake::209 loss::7
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::209 goal::250 n::37
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered loss condition now stake::208 loss::8
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::208 goal::250 n::36
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered loss condition now stake::207 loss::9
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::207 goal::250 n::35
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::208 win::7
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::208 goal::250 n::34
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered loss condition now stake::207 loss::10
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::207 goal::250 n::33
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered loss condition now stake::206 loss::11
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::206 goal::250 n::32
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::207 win::8
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::207 goal::250 n::31
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::208 win::9
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::208 goal::250 n::30
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::209 win::10
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::209 goal::250 n::29
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::210 win::11
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::210 goal::250 n::28
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::211 win::12
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::211 goal::250 n::27
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered loss condition now stake::210 loss::12
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::210 goal::250 n::26
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered loss condition now stake::209 loss::13
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::209 goal::250 n::25
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered loss condition now stake::208 loss::14
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::208 goal::250 n::24
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::209 win::13
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::209 goal::250 n::23
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::210 win::14
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::210 goal::250 n::22
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::211 win::15
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::211 goal::250 n::21
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered loss condition now stake::210 loss::15
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::210 goal::250 n::20
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::211 win::16
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::211 goal::250 n::19
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered loss condition now stake::210 loss::16
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::210 goal::250 n::18
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::211 win::17
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::211 goal::250 n::17
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::212 win::18
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::212 goal::250 n::16
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered loss condition now stake::211 loss::17
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::211 goal::250 n::15
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::212 win::19
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::212 goal::250 n::14
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered loss condition now stake::211 loss::18
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::211 goal::250 n::13
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::212 win::20
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::212 goal::250 n::12
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::213 win::21
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::213 goal::250 n::11
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered loss condition now stake::212 loss::19
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::212 goal::250 n::10
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered loss condition now stake::211 loss::20
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::211 goal::250 n::9
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::212 win::22
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::212 goal::250 n::8
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::213 win::23
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::213 goal::250 n::7
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered loss condition now stake::212 loss::21
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::212 goal::250 n::6
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::213 win::24
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::213 goal::250 n::5
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::214 win::25
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::214 goal::250 n::4
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::215 win::26
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::215 goal::250 n::3
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered win condition now stake::216 win::27
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::216 goal::250 n::2
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered loss condition now stake::215 loss::22
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered while loop when stake::215 goal::250 n::1
+2020-02-06 11:02:24 [main] INFO  com.bridgelabz.utility.Utility  -Entered loss condition now stake::214 loss::23
