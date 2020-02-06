@@ -839,8 +839,6 @@ public class Utility {
 	 */
 	public static int[] frequency(String s) {
 
-		logger.info("Entered frequency function");
-
 		int[] frequency = InputUtility.getInt(26);
 		for (int i = 0; i < s.length(); i++) {
 			char ch = s.charAt(i);
@@ -850,7 +848,6 @@ public class Utility {
 				frequency[ch - 97]++;
 			else if (ch >= '0' && ch <= '9')
 				frequency[ch - 48]++;
-			logger.info(ch + " " + frequency[i]);
 		}
 		return frequency;
 	}
@@ -866,12 +863,9 @@ public class Utility {
 	 */
 	public static boolean isAnagram(String s1, String s2) {
 
-		logger.info("Entered isAnagram function");
-
 		int[] sc1 = frequency(s1);
 		int[] sc2 = frequency(s2);
 		for (int i = 0; i < 26; i++) {
-			logger.info("");
 			if (sc1[i] != sc2[i])
 				return false;
 		}
