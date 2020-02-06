@@ -71,8 +71,15 @@ public class Utility {
 	 * @param n is the number of times you want to toss the coin
 	 */
 	public static void headTailPer(int n){
+		
+		System.setProperty("fname.name", "F:\\Programs\\BridgeLabz\\JavaProgramming\\src\\main\\java\\com\\bridgelabz\\log\\HeadTail.log");
+		PropertyConfigurator.configure("log4j.properties");
+		
+		logger.info("Enter the headTailPer function");
 		int head = 0, tail = 0, temp = n;
+		
 		if(n>0){
+			logger.info(n);
 			while(n>0){
 				if(Math.random()>0.5)
 					head++;
@@ -82,13 +89,14 @@ public class Utility {
 			}
 		}
 		else{
-			System.out.println("Please enter the positive value");
+			logger.error("Please enter the positive value");
 		}
 
-		System.out.println(head+" "+tail);
+		logger.info("Number of heads "+head+" Number of tails "+tail);
 		double hper = (head*100.0)/temp;
 		double tper = (tail*100.0)/temp;
-		System.out.println("Percent of head: "+hper+"\nPercent of tail: "+tper);
+		logger.info("Percent of head: "+hper);
+		logger.info("Percent of tail: "+tper);
 	}
 
 	/**
@@ -97,14 +105,18 @@ public class Utility {
 	 * @return true if {@code n} is a leap year or else it will return false
 	 */
 	public static boolean isLeapYear(int n){
+		System.setProperty("fname.name", "F:\\Programs\\BridgeLabz\\JavaProgramming\\src\\main\\java\\com\\bridgelabz\\log\\LeapYear.log");
 		PropertyConfigurator.configure("log4j.properties");
-		//System.setProperty("fname", "F:\\Programs\\BridgeLabz\\JavaProgramming\\src\\main\\java\\com\\bridgelabz\\log\\LeapYearLog.log");
+		logger.info("Entering the isLeapYear method");
 		if(n<1000 || n>9999){
-			logger.error("Error");
+			logger.error("Error value should be in the given range");
 			return false;
 		}
-		if(n%400 == 0 || n%4 == 0 && n%100 != 0)
+		if(n%400 == 0 || n%4 == 0 && n%100 != 0){
+			logger.info(n+" is leap year");
 			return true;
+		}
+		logger.info(n+" is not a leap year");
 		return false;
 	}
 	
@@ -216,20 +228,32 @@ public class Utility {
 	 * @param c is the value of degree 1
 	 */
 	public static void quadratic(double a, double b,double c){
+		
+		System.setProperty("fname.name", "F:\\Programs\\BridgeLabz\\JavaProgramming\\src\\main\\java\\com\\bridgelabz\\log\\Quadratic.log");
+		PropertyConfigurator.configure("log4j.properties");
+		
+		logger.info("Entered quadratic function");
+		
 		double root1 = 0 , root2 = 0;
 		double delta = (b*b) - (4*a*c);
 		if(delta>0){
+			logger.info("Entered if condition when delta value (positive) is "+delta);
 			root1 = (-b+sqrt(delta))/(2*a);
 			root2 = (-b-sqrt(delta))/(2*a);
+			logger.info("When delta:: "+delta+" root1:: "+root1+" root2:: "+root2);
 			System.out.println("root1 = "+root1+" and root2 = "+root2);
 		}
 		else if(delta == 0){
+			logger.info("Entered if condition when delta value (zero) is "+delta);
 			root1 = root2 = -b/(2*a);
+			logger.info("When delta:: "+delta+" root1:: "+root1+" root2:: "+root2);
 			System.out.println("root1 = "+root1+" and root2 = "+root2);
 		}
 		else{
+			logger.info("Entered if condition when delta value (negative) is "+delta);
 			root1 = -b/(2*a);
 			root2 = sqrt(-delta)/(2*a);
+			logger.info("When delta:: "+delta+" root1:: "+root1+" root2:: "+root2);
 			System.out.printf("root1 = %.2f+%.2fi and root2 = %.2fi+%.2f",root1,root2,root1,root2);
 		}
 	}
@@ -284,13 +308,20 @@ public class Utility {
 	 * @param a is user provided input array
 	 */
 	public static void distinctTriplet(int[] a){
+		
+		System.setProperty("fname.name", "F:\\Programs\\BridgeLabz\\JavaProgramming\\src\\main\\java\\com\\bridgelabz\\log\\CubicRunning.log");
+		PropertyConfigurator.configure("log4j.properties");
+		logger.info("Entered distinctTriplet");
 		int  d = 0;
 		for (int i = 0; i < a.length-2; i++) {
+			logger.info("Entered for loop for i : "+(i+1));
 			int j = i+1, k = i+2;
 			int zero = a[i]+a[j]+a[k];
 			if(zero == 0){
+				logger.info("Entered if condition when array elements are "+a[i]+" "+a[j]+" "+a[k]);
 				System.out.println(a[i]+" "+a[j]+" "+a[k]);
 				d++;
+				logger.info("When if condition is met then the count of distinct triplet value is: "+d);
 			}
 		}
 		System.out.println("Number of distinct triplets are: "+d);

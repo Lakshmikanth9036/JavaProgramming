@@ -1,0 +1,15 @@
+2020-02-06 09:26:43 [main] INFO  com.bridgelabz.utility.Utility  -Entered distinctTriplet
+2020-02-06 09:26:43 [main] INFO  com.bridgelabz.utility.Utility  -Entered for loop for i : 1
+2020-02-06 09:26:43 [main] INFO  com.bridgelabz.utility.Utility  -Entered for loop for i : 2
+2020-02-06 09:26:43 [main] INFO  com.bridgelabz.utility.Utility  -Entered if condition when array elements are 2 3 -5
+2020-02-06 09:26:43 [main] INFO  com.bridgelabz.utility.Utility  -When if condition is met then the count of distinct triplet value is: 1
+2020-02-06 09:26:43 [main] INFO  com.bridgelabz.utility.Utility  -Entered for loop for i : 3
+2020-02-06 09:26:43 [main] INFO  com.bridgelabz.utility.Utility  -Entered for loop for i : 4
+2020-02-06 09:26:43 [main] INFO  com.bridgelabz.utility.Utility  -Entered if condition when array elements are -5 3 2
+2020-02-06 09:26:43 [main] INFO  com.bridgelabz.utility.Utility  -When if condition is met then the count of distinct triplet value is: 2
+2020-02-06 09:26:43 [main] INFO  com.bridgelabz.utility.Utility  -Entered for loop for i : 5
+2020-02-06 09:26:43 [main] INFO  com.bridgelabz.utility.Utility  -Entered for loop for i : 6
+2020-02-06 09:26:43 [main] INFO  com.bridgelabz.utility.Utility  -Entered for loop for i : 7
+2020-02-06 09:26:43 [main] INFO  com.bridgelabz.utility.Utility  -Entered for loop for i : 8
+2020-02-06 09:26:43 [main] INFO  com.bridgelabz.utility.Utility  -Entered if condition when array elements are 7 -5 -2
+2020-02-06 09:26:43 [main] INFO  com.bridgelabz.utility.Utility  -When if condition is met then the count of distinct triplet value is: 3

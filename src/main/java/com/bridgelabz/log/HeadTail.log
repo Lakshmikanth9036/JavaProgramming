@@ -1,0 +1,15 @@
+2020-02-05 21:31:43 [main] INFO  com.bridgelabz.utility.Utility  -Enter the headTailPer function
+2020-02-05 21:31:43 [main] INFO  com.bridgelabz.utility.Utility  -10
+2020-02-05 21:31:43 [main] INFO  com.bridgelabz.utility.Utility  -Number of heads 6 Number of tails 4
+2020-02-05 21:31:43 [main] INFO  com.bridgelabz.utility.Utility  -Percent of head: 60.0
+2020-02-05 21:31:43 [main] INFO  com.bridgelabz.utility.Utility  -Percent of tail: 40.0
+2020-02-05 21:32:06 [main] INFO  com.bridgelabz.utility.Utility  -Enter the headTailPer function
+2020-02-05 21:32:06 [main] ERROR com.bridgelabz.utility.Utility  -Please enter the positive value
+2020-02-05 21:32:06 [main] INFO  com.bridgelabz.utility.Utility  -Number of heads 0 Number of tails 0
+2020-02-05 21:32:06 [main] INFO  com.bridgelabz.utility.Utility  -Percent of head: -0.0
+2020-02-05 21:32:06 [main] INFO  com.bridgelabz.utility.Utility  -Percent of tail: -0.0
+2020-02-05 21:40:01 [main] INFO  com.bridgelabz.utility.Utility  -Enter the headTailPer function
+2020-02-05 21:40:01 [main] INFO  com.bridgelabz.utility.Utility  -20
+2020-02-05 21:40:01 [main] INFO  com.bridgelabz.utility.Utility  -Number of heads 13 Number of tails 7
+2020-02-05 21:40:01 [main] INFO  com.bridgelabz.utility.Utility  -Percent of head: 65.0
+2020-02-05 21:40:01 [main] INFO  com.bridgelabz.utility.Utility  -Percent of tail: 35.0
