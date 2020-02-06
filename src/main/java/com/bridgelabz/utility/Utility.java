@@ -25,8 +25,7 @@ public class Utility {
 	/**
 	 * Displays Integer type array values
 	 * 
-	 * @param a
-	 *            is the integer array that you want to display
+	 * @param a is the integer array that you want to display
 	 */
 	public static void dispIntArr(int[] a) {
 		for (int i = 0; i < a.length; i++) {
@@ -49,8 +48,7 @@ public class Utility {
 	/**
 	 * Display the value of any Non Primitive type array
 	 * 
-	 * @param a
-	 *            is an array that you want to display
+	 * @param a is an array that you want to display
 	 */
 	public static <E> void dispObjArr(E[] a) {
 		for (E t : a) {
@@ -62,8 +60,7 @@ public class Utility {
 	/**
 	 * Display the value of any Non Primitive type array
 	 * 
-	 * @param a
-	 *            is an array that you want to display
+	 * @param a is an array that you want to display
 	 */
 	public static <E> void disp2DArr(E[][] a) {
 		for (E[] ts : a) {
@@ -77,8 +74,7 @@ public class Utility {
 	/**
 	 * Displays percentage of head and tail fallen in {@code n} tosses
 	 * 
-	 * @param n
-	 *            is the number of times you want to toss the coin
+	 * @param n is the number of times you want to toss the coin
 	 */
 	public static Double[] headTailPer(int n) {
 
@@ -97,7 +93,7 @@ public class Utility {
 		} else {
 			logger.error("Please enter the positive value");
 		}
-		
+
 		Double[] per = InputUtility.getDouble(2);
 		logger.info("Number of heads " + head + " Number of tails " + tail);
 		double hper = (head * 100.0) / temp;
@@ -112,8 +108,7 @@ public class Utility {
 	/**
 	 * Return whether the year is leap year or not
 	 * 
-	 * @param n
-	 *            year that we want to check is it a leap year or not
+	 * @param n year that we want to check is it a leap year or not
 	 * @return true if {@code n} is a leap year or else it will return false
 	 */
 	public static boolean isLeapYear(int n) {
@@ -135,10 +130,8 @@ public class Utility {
 	/**
 	 * Returns power of the given number
 	 * 
-	 * @param n
-	 *            is the number for which we want find power
-	 * @param m
-	 *            is the power of {@code n}
+	 * @param n is the number for which we want find power
+	 * @param m is the power of {@code n}
 	 * @return the {@code n^m}
 	 */
 	public static int pow(int n, int m) {
@@ -155,8 +148,7 @@ public class Utility {
 	/**
 	 * Display 2 table till 2 power {@code n}
 	 * 
-	 * @param n
-	 *            power of 2
+	 * @param n power of 2
 	 */
 	public static void powerOf2(int n) {
 		int pow = pow(2, n);
@@ -170,8 +162,7 @@ public class Utility {
 	/**
 	 * Display the {@code n} harmonic values
 	 * 
-	 * @param n
-	 *            is the number of harmonic value needed
+	 * @param n is the number of harmonic value needed
 	 */
 	public static Double[] harmonic(int n) {
 		double k = 1;
@@ -189,8 +180,7 @@ public class Utility {
 	/**
 	 * Display the possible prime of the given number
 	 * 
-	 * @param n
-	 *            is number for which we need prime factors
+	 * @param n is number for which we need prime factors
 	 */
 	public static void primeFactors(int n) {
 		for (int i = 2; i <= n; i++) {
@@ -206,10 +196,8 @@ public class Utility {
 	/**
 	 * Returns power of the given double type number
 	 * 
-	 * @param n
-	 *            is the double type number for which we want find power
-	 * @param m
-	 *            is the power of {@code n}
+	 * @param n is the double type number for which we want find power
+	 * @param m is the power of {@code n}
 	 * @return the {@code n^m}
 	 */
 	public static double pow(double n, int p) {
@@ -224,8 +212,7 @@ public class Utility {
 	/**
 	 * Return the square root of the given positive integer value
 	 * 
-	 * @param c
-	 *            is the value for which we need to find square root
+	 * @param c is the value for which we need to find square root
 	 * @return square root of the {@code c}
 	 */
 	public static double sqrt(double c) {
@@ -242,10 +229,8 @@ public class Utility {
 	/**
 	 * Returns the distance from the origin to point plane of (x,y)
 	 * 
-	 * @param x
-	 *            is value with respect to x co-ordinate
-	 * @param y
-	 *            is value with respect to y co-ordinate
+	 * @param x is value with respect to x co-ordinate
+	 * @param y is value with respect to y co-ordinate
 	 * @return the distance between (0,0) to (x,y)
 	 */
 	public static double distance(double x, double y) {
@@ -256,12 +241,9 @@ public class Utility {
 	/**
 	 * Display the quadratic equation of the degree of 3
 	 * 
-	 * @param a
-	 *            is the value of degree 3
-	 * @param b
-	 *            is the value of degree 2
-	 * @param c
-	 *            is the value of degree 1
+	 * @param a is the value of degree 3
+	 * @param b is the value of degree 2
+	 * @param c is the value of degree 1
 	 */
 	public static void quadratic(double a, double b, double c) {
 
@@ -295,18 +277,11 @@ public class Utility {
 	}
 
 	/**
-	 * Simple gambling game which returns number of wins and percent of wins and
-	 * losses
+	 * Simple gambling game which returns number of wins and percent of wins and losses
 	 * 
-	 * @param stake
-	 *            is the total amount that user has with him before he start the
-	 *            game
-	 * @param goal
-	 *            is the target amount which user tend to reach in the gambling
-	 *            simulation
-	 * @param n
-	 *            is the maximum number of games that the user can play by which
-	 *            user has to reach the goal
+	 * @param stake is the total amount that user has with him before he start the game
+	 * @param goal is the target amount which user tend to reach in the gambling simulation
+	 * @param n is the maximum number of games that the user can play by which user has to reach the goal
 	 */
 	public static void gambler(int stake, int goal, int n) {
 		int win = 0, loss = 0;
@@ -356,11 +331,9 @@ public class Utility {
 	}
 
 	/**
-	 * Receives a array and returns the number of distinct triplets and
-	 * corresponding triplet
+	 * Receives a array and returns the number of distinct triplets corresponding triplet
 	 * 
-	 * @param a
-	 *            is user provided input array
+	 * @param a is user provided input array
 	 */
 	public static void distinctTriplet(int[] a) {
 
@@ -412,8 +385,7 @@ public class Utility {
 	/**
 	 * Display only unique coupon generate by {@code n} iteration
 	 * 
-	 * @param n
-	 *            is the number of coupons that need to be generated
+	 * @param n is the number of coupons that need to be generated
 	 */
 	public static void distinctCoupon(int n) {
 		int[] a = InputUtility.getInt(n);
@@ -429,12 +401,9 @@ public class Utility {
 	 * Return the day of the week i.e; if Sunday it returns 0, if Monday it
 	 * returns 1, soon
 	 * 
-	 * @param m
-	 *            is the month
-	 * @param d
-	 *            is the day
-	 * @param y
-	 *            is the year
+	 * @param m is the month
+	 * @param d is the day
+	 * @param y is the year
 	 * @return the day of the week
 	 */
 	public static int dayOftheWeek(int m, int d, int y) {
@@ -467,8 +436,7 @@ public class Utility {
 	/**
 	 * Return the Celsius value of the given Fahreneheit value
 	 * 
-	 * @param temp
-	 *            is the Fahreneheit value
+	 * @param temp is the Fahreneheit value
 	 * @return the Celsius value of the {@code temp}
 	 */
 	public static double fahrenheitToCelsius(double temp) {
@@ -493,12 +461,9 @@ public class Utility {
 	 * principle loan amount, years to pay principle loan amount and rate of
 	 * interest
 	 * 
-	 * @param P
-	 *            is the principle loan amount
-	 * @param Y
-	 *            is the years to pay principle loan amount
-	 * @param R
-	 *            is the rate of interest
+	 * @param P is the principle loan amount
+	 * @param Y is the years to pay principle loan amount
+	 * @param R is the rate of interest
 	 * @return the monthly payments that user has to pay
 	 */
 	public static double mounthlyPayment(double P, int Y, double R) {
@@ -513,8 +478,7 @@ public class Utility {
 	/**
 	 * Fewest Notes to be returned for Vending Machine
 	 * 
-	 * @param n
-	 *            is the Change in rs to be returned by the Vending Machine
+	 * @param n is the Change in rs to be returned by the Vending Machine
 	 * @return number of minimum Note needed to give the change
 	 */
 	public static int minNotes(int n) {
@@ -542,8 +506,7 @@ public class Utility {
 	/**
 	 * List of Rs Notes that would given in the Change by Vending Machine
 	 * 
-	 * @param n
-	 *            is the Change in rs to be returned by the Vending Machine
+	 * @param n is the Change in rs to be returned by the Vending Machine
 	 * @return list of Rs Notes
 	 */
 	public static int[] change(int n) {
@@ -568,9 +531,7 @@ public class Utility {
 	/**
 	 * Returns the binary equivalent of the given decimal number
 	 * 
-	 * @param n
-	 *            is the decimal number for which the binary equivalent is
-	 *            required
+	 * @param n is the decimal number for which the binary equivalent is required
 	 * @return the binary equivalent of {@code n}
 	 */
 	public static String toBinary(int n) {
@@ -586,8 +547,7 @@ public class Utility {
 	/**
 	 * Returns the decimal value of the given binary number
 	 * 
-	 * @param n
-	 *            is the binary number for which the decimal value is required
+	 * @param n is the binary number for which the decimal value is required
 	 * @return the decimal value of {@code n}
 	 */
 	public static int toDecimal(int n) {
@@ -604,10 +564,8 @@ public class Utility {
 	/**
 	 * Read in the list of words comma separated from a File
 	 * 
-	 * @param s
-	 *            is the file from which we read the words
-	 * @return an array of string containing list of words that had been read
-	 *         from the file
+	 * @param s is the file from which we read the words
+	 * @return an array of string containing list of words that had been read from the file
 	 */
 	public static String[] splitListOfWords(String s) {
 		BufferedReader reader = null;
@@ -635,10 +593,8 @@ public class Utility {
 	/**
 	 * Write the content of the string array to a file
 	 * 
-	 * @param s
-	 *            is the file in which we want to store the given string array
-	 * @param str
-	 *            is the string array that we need to sore in {@code s} file
+	 * @param s is the file in which we want to store the given string array
+	 * @param str is the string array that we need to sore in {@code s} file
 	 */
 	public static void writeToFile(String s, String[] str) {
 		BufferedWriter writer = null;
@@ -661,13 +617,11 @@ public class Utility {
 	}
 
 	/**
-	 * Using insertion sort mechanism sorts the given string array in
-	 * lexograpical order
+	 * Using insertion sort mechanism sorts the given string array in lexograpical order
 	 * 
-	 * @param s
-	 *            is the string array that need to be sorted
+	 * @param s is the string array that need to be sorted
 	 */
-	public static void insertionSort(String[] s) {
+	public static String[] insertionSort(String[] s) {
 		for (int i = 1; i < s.length; i++) {
 			int j = i - 1;
 			String temp = s[i];
@@ -677,16 +631,15 @@ public class Utility {
 			}
 			s[++j] = temp;
 		}
+		return s;
 	}
 
 	/**
-	 * Generic method which sort any type of array in its natural order using
-	 * insertion sort mechanism
+	 * Generic method which sort any type of array in its natural order using insertion sort mechanism
 	 * 
-	 * @param s
-	 *            is the generic type array that need to be sorted
+	 * @param s is the generic type array that need to be sorted
 	 */
-	public static <T extends Comparable<T>> void insertionSort(T[] s) {
+	public static <T extends Comparable<T>> T[] insertionSortGeneric(T[] s) {
 		for (int i = 1; i < s.length; i++) {
 			int j = i - 1;
 			T temp = s[i];
@@ -696,19 +649,16 @@ public class Utility {
 			}
 			s[++j] = temp;
 		}
+		return s;
 	}
 
 	/**
 	 * Search a given element using binary search technique
 	 * 
-	 * @param s
-	 *            is the array form which we need to search the element
-	 * @param ele
-	 *            is the element to be searched
-	 * @param l
-	 *            is the starting index of the array
-	 * @param h
-	 *            is the last index of the array
+	 * @param s is the array form which we need to search the element
+	 * @param ele is the element to be searched
+	 * @param l is the starting index of the array
+	 * @param h is the last index of the array
 	 * @return mid value if the element is found else return -1
 	 */
 	public static int binarySearch(String[] s, String ele, int l, int h) {
@@ -720,22 +670,17 @@ public class Utility {
 		if (s[mid].compareTo(ele) < 0)
 			l = mid + 1;
 		if (s[mid].compareTo(ele) > 0)
-			h = mid - 1;
+			h = mid - 1;    
 		return binarySearch(s, ele, l, h);
 	}
 
 	/**
-	 * Search a given element using binary search technique for any generic type
-	 * array
+	 * Search a given element using binary search technique for any generic type array
 	 * 
-	 * @param s
-	 *            is the array form which we need to search the element
-	 * @param ele
-	 *            is the element to be searched
-	 * @param l
-	 *            is the starting index of the array
-	 * @param h
-	 *            is the last index of the array
+	 * @param s is the array form which we need to search the element
+	 * @param ele is the element to be searched
+	 * @param l is the starting index of the array
+	 * @param h is the last index of the array
 	 * @return mid value if the element is found else return -1
 	 */
 	public static <E extends Comparable<E>> int binarySearchGeneric(E[] s, E ele, int l, int h) {
@@ -754,8 +699,7 @@ public class Utility {
 	/**
 	 * Using Bubble sort mechanism sorts the given integer array
 	 * 
-	 * @param s
-	 *            is the integer array that need to be sorted
+	 * @param s is the integer array that need to be sorted
 	 */
 	public static void bubbleSort(int[] a) {
 		for (int i = 0; i < a.length - 1; i++) {
@@ -772,8 +716,7 @@ public class Utility {
 	/**
 	 * Using Bubble sort mechanism sorts the given integer array
 	 * 
-	 * @param s
-	 *            is the integer array that need to be sorted
+	 * @param s is the integer array that need to be sorted
 	 */
 	public static <E extends Comparable<E>> void bubbleSortGeneric(E[] a) {
 
@@ -791,14 +734,10 @@ public class Utility {
 	/**
 	 * Merge the given array
 	 * 
-	 * @param s
-	 *            is the array
-	 * @param l
-	 *            is the least index
-	 * @param h
-	 *            is the highest index
-	 * @param m
-	 *            is the mid value
+	 * @param s is the array
+	 * @param l is the least index
+	 * @param h is the highest index
+	 * @param m is the mid value
 	 */
 	public static void merge(String[] s, int l, int h, int m) {
 		String[] str = InputUtility.getString(h - l + 1);
@@ -821,12 +760,9 @@ public class Utility {
 	/**
 	 * Sort the array using merge sort technique
 	 * 
-	 * @param s
-	 *            is the array to be sorted
-	 * @param l
-	 *            is the least index
-	 * @param h
-	 *            is the highest index
+	 * @param s is the array to be sorted
+	 * @param l is the least index
+	 * @param h is the highest index
 	 */
 	public static void mergeSort(String[] s, int l, int h) {
 		if (l < h) {
@@ -838,11 +774,9 @@ public class Utility {
 	}
 
 	/**
-	 * Return an array that contain the frequency of the letters in the given
-	 * string
+	 * Return an array that contain the frequency of the letters in the given string
 	 * 
-	 * @param s
-	 *            is the string
+	 * @param s is the string
 	 * @return the frequency of character in the string
 	 */
 	public static int[] frequency(String s) {
@@ -863,10 +797,8 @@ public class Utility {
 	/**
 	 * Returns if the given two strings are anagram or not
 	 * 
-	 * @param s1
-	 *            is the string given by user
-	 * @param s2
-	 *            is the string the need to be compared with other string
+	 * @param s1 is the string given by user
+	 * @param s2 is the string the need to be compared with other string
 	 * @return true if both the string are anagram else return flase
 	 */
 	public static boolean isAnagram(String s1, String s2) {
@@ -907,8 +839,7 @@ public class Utility {
 	/**
 	 * Returns true if the given number is prime number
 	 * 
-	 * @param n
-	 *            is the number to be checked
+	 * @param n is the number to be checked
 	 * @return true if the number is prime number else returns false
 	 */
 	public static boolean isPrime(int n) {
@@ -924,8 +855,7 @@ public class Utility {
 	/**
 	 * Returns true if the given string is palindrome
 	 * 
-	 * @param s
-	 *            is the string to be checked
+	 * @param s is the string to be checked
 	 * @return true if the string is palindrome else returns false
 	 */
 	public static boolean isPalin(String s) {
@@ -944,12 +874,9 @@ public class Utility {
 	/**
 	 * Returns the day of the week i.e; if Sunday 0, Monday 1, and soon
 	 * 
-	 * @param m
-	 *            is the month
-	 * @param d
-	 *            is the day
-	 * @param y
-	 *            is the year
+	 * @param m is the month
+	 * @param d is the day
+	 * @param y is the year
 	 * @return the day of the week
 	 */
 	public static int getDay(int m, int d, int y) {
