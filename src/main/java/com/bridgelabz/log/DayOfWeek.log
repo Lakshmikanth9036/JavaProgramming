@@ -1,0 +1,6 @@
+2020-02-06 10:14:12 [main] INFO  com.bridgelabz.utility.Utility  -Entered dayOftheWeek function
+2020-02-06 10:14:12 [main] INFO  com.bridgelabz.utility.Utility  -Entered if condition when m::2d::7y::2121
+2020-02-06 10:14:12 [main] INFO  com.bridgelabz.utility.Utility  -Entering the isLeapYear method
+2020-02-06 10:14:12 [main] INFO  com.bridgelabz.utility.Utility  -2121 is not a leap year
+2020-02-06 10:14:12 [main] INFO  com.bridgelabz.utility.Utility  -Entering the isLeapYear method
+2020-02-06 10:14:12 [main] INFO  com.bridgelabz.utility.Utility  -2121 is not a leap year

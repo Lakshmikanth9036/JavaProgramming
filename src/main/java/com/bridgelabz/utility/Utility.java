@@ -72,9 +72,6 @@ public class Utility {
 	 */
 	public static void headTailPer(int n){
 		
-		System.setProperty("fname.name", "F:\\Programs\\BridgeLabz\\JavaProgramming\\src\\main\\java\\com\\bridgelabz\\log\\HeadTail.log");
-		PropertyConfigurator.configure("log4j.properties");
-		
 		logger.info("Enter the headTailPer function");
 		int head = 0, tail = 0, temp = n;
 		
@@ -105,8 +102,7 @@ public class Utility {
 	 * @return true if {@code n} is a leap year or else it will return false
 	 */
 	public static boolean isLeapYear(int n){
-		System.setProperty("fname.name", "F:\\Programs\\BridgeLabz\\JavaProgramming\\src\\main\\java\\com\\bridgelabz\\log\\LeapYear.log");
-		PropertyConfigurator.configure("log4j.properties");
+		
 		logger.info("Entering the isLeapYear method");
 		if(n<1000 || n>9999){
 			logger.error("Error value should be in the given range");
@@ -116,8 +112,10 @@ public class Utility {
 			logger.info(n+" is leap year");
 			return true;
 		}
+		else{
 		logger.info(n+" is not a leap year");
 		return false;
+		}
 	}
 	
 	/**
@@ -229,9 +227,6 @@ public class Utility {
 	 */
 	public static void quadratic(double a, double b,double c){
 		
-		System.setProperty("fname.name", "F:\\Programs\\BridgeLabz\\JavaProgramming\\src\\main\\java\\com\\bridgelabz\\log\\Quadratic.log");
-		PropertyConfigurator.configure("log4j.properties");
-		
 		logger.info("Entered quadratic function");
 		
 		double root1 = 0 , root2 = 0;
@@ -309,8 +304,6 @@ public class Utility {
 	 */
 	public static void distinctTriplet(int[] a){
 		
-		System.setProperty("fname.name", "F:\\Programs\\BridgeLabz\\JavaProgramming\\src\\main\\java\\com\\bridgelabz\\log\\CubicRunning.log");
-		PropertyConfigurator.configure("log4j.properties");
 		logger.info("Entered distinctTriplet");
 		int  d = 0;
 		for (int i = 0; i < a.length-2; i++) {
@@ -376,12 +369,16 @@ public class Utility {
 	 * @return the day of the week
 	 */
 	public static int dayOftheWeek(int m, int d, int y){
+		
+		logger.info("Entered dayOftheWeek function");
+		
 		int yo = y-(14-m)/12;
 		int x = yo+yo/4-yo/100+yo/400;
 		int mo = m+12*((14-m)/12)-2;
 		int d0 = -1;
 		
 		if(m>0 && m<=12 && y>999 && y<=9999 && d>0){
+			logger.info("Entered if condition when m::"+m+"::d::"+d+"::y::"+y);
 			if(isLeapYear(y) && m==2 && d<=29)
 				d0 = (d+x+31*mo/12)%7;
 			else if(!isLeapYear(y) && m==2 && d<=28)
@@ -390,6 +387,10 @@ public class Utility {
 				d0 = (d+x+31*mo/12)%7;
 			else if(m!=4 && m!=6 && m!=9 && m!=11 && m!=2 && d<=31)
 				d0 = (d+x+31*mo/12)%7;
+		}
+		
+		if(d0==-1){
+			logger.error("Not entered correct date format");
 		}
 		return d0;
 	}
@@ -437,14 +438,22 @@ public class Utility {
 	 * @return number of minimum Note needed to give the change
 	 */
 	public static int minNotes(int n){
-		if(n<1)
+
+		logger.info("Entered minNotes");
+		
+		if(n<1){
+			logger.error(n+" value should be positive");
 			return -1;
+		}
 		int[] notes = {1000,500,100,50,10,5,2,1};
 		int minNotes = 0;
 		for (int i = 0; i < notes.length; i++) {
+			logger.info("Entered for loop where i:: "+i);
 			while(n-notes[i]>-1){
+				logger.info("Entered while loop when n:: "+n);
 				n = n-notes[i];
 				minNotes++;
+				logger.info("Count of minNotes:: "+minNotes);
 			}
 		}
 		return minNotes;
@@ -456,12 +465,19 @@ public class Utility {
 	 * @return list of Rs Notes
 	 */
 	public static int[] change(int n){
+		
+		logger.info("Entered change function");
+		
 		int[] notes = {1000,500,100,50,10,5,2,1};
 		int[] count = InputUtility.getInt(notes.length);
+		
 		for (int i = 0; i < notes.length; i++) {
+			logger.info("Entered for loop when i:: "+i);
 			while(n-notes[i]>-1){
+				logger.info("Entered while loop when n:: "+n);
 				n = n-notes[i];
 				count[i]++;
+				logger.info("Incrementing the count of note::"+notes[i]+" :: "+count[i]);
 			}
 		}
 		return count;

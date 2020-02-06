@@ -1,11 +1,17 @@
 package com.bridgelabz.junitTesting;
 
+import org.apache.log4j.PropertyConfigurator;
+
 import com.bridgelabz.InputUtility.InputUtility;
 import com.bridgelabz.utility.Utility;
 
 public class VendingMachine {
 
 	public static void main(String[] args) {
+		
+		System.setProperty("fname.name", "F:\\Programs\\BridgeLabz\\JavaProgramming\\src\\main\\java\\com\\bridgelabz\\log\\VendingMachine.log");
+		PropertyConfigurator.configure("log4j.properties");
+		
 		System.out.println("Enter the amount");
 		int n = InputUtility.getScanner().nextInt();
 		int notes = Utility.minNotes(n);

@@ -1,11 +1,17 @@
 package com.bridgelabz.junitTesting;
 
+import org.apache.log4j.PropertyConfigurator;
+
 import com.bridgelabz.InputUtility.InputUtility;
 import com.bridgelabz.utility.Utility;
 
 public class DayOfWeek {
 
 	public static void main(String[] args) {
+		
+		System.setProperty("fname.name", "F:\\Programs\\BridgeLabz\\JavaProgramming\\src\\main\\java\\com\\bridgelabz\\log\\DayOfWeek.log");
+		PropertyConfigurator.configure("log4j.properties");
+		
 		System.out.println("Enter the month");
 		int m = InputUtility.getScanner().nextInt();
 		System.out.println("Enter the day");

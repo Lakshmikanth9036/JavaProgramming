@@ -1,8 +1,3 @@
-2020-02-05 21:37:39 [main] INFO  com.bridgelabz.utility.Utility  -Entering the isLeapYear method
-2020-02-05 21:37:39 [main] ERROR com.bridgelabz.utility.Utility  -Error value should be in the given range
-2020-02-05 21:38:42 [main] INFO  com.bridgelabz.utility.Utility  -Entering the isLeapYear method
-2020-02-05 21:38:42 [main] ERROR com.bridgelabz.utility.Utility  -Error value should be in the given range
-2020-02-05 21:40:26 [main] INFO  com.bridgelabz.utility.Utility  -Entering the isLeapYear method
-2020-02-05 21:40:26 [main] ERROR com.bridgelabz.utility.Utility  -Error value should be in the given range
-2020-02-05 21:41:43 [main] INFO  com.bridgelabz.utility.Utility  -Entering the isLeapYear method
-2020-02-05 21:41:43 [main] INFO  com.bridgelabz.utility.Utility  -2012 is leap year
+
+2020-02-06 09:46:02 [main] INFO  com.bridgelabz.utility.Utility  -Entering the isLeapYear method
+2020-02-06 09:46:02 [main] ERROR com.bridgelabz.utility.Utility  -Error value should be in the given range
