@@ -37,6 +37,11 @@ public class InputUtility {
 		return arr;
 	}
 	
+	public static Integer[] getInteger(int n){
+		Integer[] arr = new Integer[n];
+		return arr;
+	}
+	
 	public static Integer[] getIntegerArr(int n){
 		Integer[] arr = new Integer[n];
 		for(int i = 0 ; i < arr.length ; i++){

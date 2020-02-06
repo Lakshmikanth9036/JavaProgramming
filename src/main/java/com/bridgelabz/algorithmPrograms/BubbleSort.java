@@ -8,7 +8,7 @@ public class BubbleSort {
 	public static void main(String[] args) {
 		System.out.println("Enter the size of the array");
 		int n = InputUtility.getScanner().nextInt();
-		System.out.println("Enter "+n+" array element");
+		System.out.println("Enter " + n + " array element");
 		int[] a = InputUtility.getIntArr(n);
 		Utility.bubbleSort(a);
 		Utility.dispIntArr(a);
