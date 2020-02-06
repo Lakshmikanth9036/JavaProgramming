@@ -9,6 +9,7 @@ import java.io.IOException;
 import org.apache.log4j.Logger;
 
 import com.bridgelabz.InputUtility.InputUtility;
+import com.bridgelabz.logger.LoggerUtility;
 
 /**
  * @author Lakshmikanth N
@@ -19,7 +20,7 @@ public class Utility {
 	private Utility() {
 	}
 
-	static Logger logger = Logger.getLogger(Utility.class);
+	static Logger logger = LoggerUtility.getLogger("Utility.class");
 
 	/**
 	 * Displays Integer type array values
@@ -36,8 +37,7 @@ public class Utility {
 	/**
 	 * Displays String type array values
 	 * 
-	 * @param s
-	 *            is the string array that you want to display
+	 * @param s is the string array that you want to display
 	 */
 	public static void dispStringArr(String[] s) {
 		for (int i = 0; i < s.length; i++) {
@@ -80,7 +80,7 @@ public class Utility {
 	 * @param n
 	 *            is the number of times you want to toss the coin
 	 */
-	public static void headTailPer(int n) {
+	public static Double[] headTailPer(int n) {
 
 		logger.info("Enter the headTailPer function");
 		int head = 0, tail = 0, temp = n;
@@ -97,12 +97,16 @@ public class Utility {
 		} else {
 			logger.error("Please enter the positive value");
 		}
-
+		
+		Double[] per = InputUtility.getDouble(2);
 		logger.info("Number of heads " + head + " Number of tails " + tail);
 		double hper = (head * 100.0) / temp;
 		double tper = (tail * 100.0) / temp;
+		per[0]=hper;
+		per[1]=tper;
 		logger.info("Percent of head: " + hper);
 		logger.info("Percent of tail: " + tper);
+		return per;
 	}
 
 	/**
@@ -169,13 +173,17 @@ public class Utility {
 	 * @param n
 	 *            is the number of harmonic value needed
 	 */
-	public static void harmonic(int n) {
+	public static Double[] harmonic(int n) {
 		double k = 1;
+		Double[] val = InputUtility.getDouble(n);
+		int i = 0;
 		while (n > 0) {
-			System.out.println(k);
+			val[i] = k;
 			k += 1.0 / n;
+			i++;
 			n--;
 		}
+		return val;
 	}
 
 	/**

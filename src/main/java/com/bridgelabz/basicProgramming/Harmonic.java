@@ -8,6 +8,7 @@ public class Harmonic {
 	public static void main(String[] args) {
 		System.out.println("Enter the value of n");
 		int n = InputUtility.getScanner().nextInt();
-		Utility.harmonic(n);
+		Double[] val = Utility.harmonic(n);
+		Utility.dispObjArr(val);
 	}
 }

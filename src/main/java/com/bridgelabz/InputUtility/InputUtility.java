@@ -21,6 +21,33 @@ public class InputUtility {
 		return rand;
 	}
 	
+	public static int[] getInt(int n){
+		int[] arr = new int[n];
+		return arr;
+	}
+	
+	public static Integer[] getInteger(int n){
+		Integer[] arr = new Integer[n];
+		return arr;
+	}
+	
+	public static Object[] getObject(int n){
+		Object[] arr = new Object[n];
+		return arr;
+	}
+	
+	public static Double[] getDouble(int n){
+		Double[] arr = new Double[n];
+		return arr;
+	}
+	
+	
+	
+	public static String[] getString(int n){
+		String[] arr = new String[n];
+		return arr;
+	}
+	
 	public static int[] getIntArr(int n){
 		int[] arr = new int[n];
 		for(int i = 0 ; i < arr.length ; i++){
@@ -37,31 +64,11 @@ public class InputUtility {
 		return arr;
 	}
 	
-	public static Integer[] getInteger(int n){
-		Integer[] arr = new Integer[n];
-		return arr;
-	}
-	
 	public static Integer[] getIntegerArr(int n){
 		Integer[] arr = new Integer[n];
 		for(int i = 0 ; i < arr.length ; i++){
 			arr[i] = in.nextInt();
 		}
-		return arr;
-	}
-	
-	public static int[] getInt(int n){
-		int[] arr = new int[n];
-		return arr;
-	}
-	
-	public static Object[] getObject(int n){
-		Object[] arr = new Object[n];
-		return arr;
-	}
-	
-	public static String[] getString(int n){
-		String[] arr = new String[n];
 		return arr;
 	}
 	

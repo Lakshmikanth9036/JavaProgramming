@@ -4,10 +4,11 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
 import com.bridgelabz.InputUtility.InputUtility;
+import com.bridgelabz.logger.LoggerUtility;
 
 public class TicTacToe {
 	
-	static Logger logger = Logger.getLogger(TicTacToe.class);
+	static Logger logger = LoggerUtility.getLogger("TicTacToe.class");
 	
 	public static void place(char[][] b, int m, int n, char p){
 		logger.info("Entered checPos function");
