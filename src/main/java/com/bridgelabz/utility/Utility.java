@@ -113,16 +113,16 @@ public class Utility {
 	 */
 	public static boolean isLeapYear(int n) {
 
-		logger.info("Entering the isLeapYear method");
+//		logger.info("Entering the isLeapYear method");
 		if (n < 1000 || n > 9999) {
-			logger.error("Error value should be in the given range");
+	//		logger.error("Error value should be in the given range");
 			return false;
 		}
 		if (n % 400 == 0 || n % 4 == 0 && n % 100 != 0) {
-			logger.info(n + " is leap year");
+		//	logger.info(n + " is leap year");
 			return true;
 		} else {
-			logger.info(n + " is not a leap year");
+			//logger.info(n + " is not a leap year");
 			return false;
 		}
 	}
