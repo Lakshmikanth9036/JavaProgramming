@@ -701,7 +701,7 @@ public class Utility {
 	 * 
 	 * @param s is the integer array that need to be sorted
 	 */
-	public static void bubbleSort(int[] a) {
+	public static int[] bubbleSort(int[] a) {
 		for (int i = 0; i < a.length - 1; i++) {
 			for (int j = 0; j < a.length - i - 1; j++) {
 				if (a[j] > a[j + 1]) {
@@ -711,6 +711,7 @@ public class Utility {
 				}
 			}
 		}
+		return a;
 	}
 
 	/**
@@ -718,17 +719,18 @@ public class Utility {
 	 * 
 	 * @param s is the integer array that need to be sorted
 	 */
-	public static <E extends Comparable<E>> void bubbleSortGeneric(E[] a) {
+	public static <T extends Comparable<T>> T[] bubbleSortGeneric(T[] a) {
 
 		for (int i = 0; i < a.length - 1; i++) {
 			for (int j = 0; j < a.length - i - 1; j++) {
 				if (a[j].compareTo(a[j + 1]) > 0) {
-					E temp = a[j];
+					T temp = a[j];
 					a[j] = a[j + 1];
 					a[j + 1] = temp;
 				}
 			}
 		}
+		return a;
 	}
 
 	/**
