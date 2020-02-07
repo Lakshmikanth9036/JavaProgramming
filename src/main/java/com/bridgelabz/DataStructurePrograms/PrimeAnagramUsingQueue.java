@@ -2,7 +2,6 @@ package com.bridgelabz.DataStructurePrograms;
 
 import com.bridgelabz.DataStructure.LinkedList;
 import com.bridgelabz.DataStructure.Queue;
-import com.bridgelabz.DataStructure.Stack;
 import com.bridgelabz.InputUtility.InputUtility;
 import com.bridgelabz.utility.Utility;
 
