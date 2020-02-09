@@ -1,5 +1,7 @@
 package com.bridgelabz.DataStructure;
 
+import java.util.function.Consumer;
+
 public class LinkedList<T extends Comparable<T>> {
 	class Node {
 		T data;
@@ -139,6 +141,14 @@ public class LinkedList<T extends Comparable<T>> {
 				j = j.next;
 			}
 			i = i.next;
+		}
+	}
+	
+	public void forEach(Consumer<T> data){
+		Node n = head;
+		while(n!=null){
+			data.accept(n.data);
+			n=n.next;
 		}
 	}
 

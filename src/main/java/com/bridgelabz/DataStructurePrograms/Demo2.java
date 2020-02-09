@@ -1,5 +1,8 @@
 package com.bridgelabz.DataStructurePrograms;
 
+import java.util.ArrayList;
+import java.util.stream.Stream;
+
 import com.bridgelabz.DataStructure.LinkedList;
 
 public class Demo2 {
@@ -9,8 +12,14 @@ public class Demo2 {
 		list.add(1);
 		list.add(2);
 		list.add(3);
-		System.out.println(list);
-		LinkedList<Integer> list2 = list;
-		System.out.println(list2);
+		list.forEach(System.out::print);
+		
+		ArrayList<Integer> ar = new ArrayList<>();
+		ar.add(3);
+		ar.add(2);
+		ar.add(1);
+		Stream<Integer> str = ar.stream();
+		str.forEachOrdered(System.out::println);
+		
 	}
 }
