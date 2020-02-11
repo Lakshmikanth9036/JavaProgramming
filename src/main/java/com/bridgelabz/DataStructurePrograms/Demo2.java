@@ -12,14 +12,12 @@ public class Demo2 {
 		list.add(1);
 		list.add(2);
 		list.add(3);
-		list.forEach(System.out::print);
-		
+		list.forEach(System.out::println);
 		ArrayList<Integer> ar = new ArrayList<>();
 		ar.add(3);
 		ar.add(2);
 		ar.add(1);
 		Stream<Integer> str = ar.stream();
-		str.forEachOrdered(System.out::println);
-		
+		str.forEachOrdered(System.out::print);
 	}
 }
